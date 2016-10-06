@@ -14,10 +14,6 @@ router.use(function (request, response, next) {
     next();
 });
 
-/*router.get('/', function(request, response) {
-
-});*/
-
 router.route('/:date').get(function (request, response) {
     if (/^\d+$/.test(request.params.date)) {
         response.json({
